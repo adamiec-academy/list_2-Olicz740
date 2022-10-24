@@ -1,5 +1,5 @@
 from turtle import forward, speed, exitonclick,backward, left, pendown, penup, goto
-import random
+from random import randint
 speed("normal")
 penup()
 goto(-270,-200)
