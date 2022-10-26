@@ -1,5 +1,5 @@
 text ="Ala (nie) ma kota"
-def sen(text):
+ def remove_parentheses(text)
     result = ""
     is_inside = False
 
@@ -15,4 +15,4 @@ def sen(text):
     return result
 
 
-print(sen(text))
+print(remove_parentheses(text))
