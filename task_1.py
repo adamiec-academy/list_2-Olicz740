@@ -1,4 +1,4 @@
-def remove_parentheses(text)
+def remove_parentheses(text):
     result = ""
     is_inside = False
 
