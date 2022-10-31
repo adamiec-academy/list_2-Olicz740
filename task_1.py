@@ -1,5 +1,4 @@
-text ="Ala (nie) ma kota"
- def remove_parentheses(text)
+def remove_parentheses(text)
     result = ""
     is_inside = False
 
@@ -13,6 +12,3 @@ text ="Ala (nie) ma kota"
             result += letter
 
     return result
-
-
-print(remove_parentheses(text))
