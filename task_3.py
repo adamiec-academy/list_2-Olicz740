@@ -4,7 +4,7 @@ def is_prime(n):
     elif n==2:
         return True
     else :
-        for i in range(2,n):
+        for i in range(2,n + 1):
             if (n % i) == 0:
                 return False
             else:
@@ -17,7 +17,7 @@ def is_diabolic(n):
         return False
 
 result =0
-for i in range(1,100000):
+for i in range(1,100001):
     if is_prime(i) is True and is_diabolic(str(i)) is True:
         result += 1
         print(i)
