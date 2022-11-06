@@ -11,7 +11,7 @@ def is_prime(n):
                 return True
 
 def is_diabolic(n):
-    if "666" in n:
+    if "666" in str(n):
         return True
     else:
         return False
