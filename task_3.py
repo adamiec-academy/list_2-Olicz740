@@ -13,6 +13,8 @@ def is_prime(n):
 def is_diabolic(n):
     if "666" in n:
         return True
+    else:
+        return False
 
 result =0
 for i in range(1,100000):
