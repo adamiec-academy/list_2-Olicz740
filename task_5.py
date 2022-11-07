@@ -9,7 +9,7 @@ def cipher(text, shift):
             result += chr(ord("a") + shift - 1)
         else :
             result += chr(ord(letter) + shift)
-    print(result)
+    return result
 def decipher(text, shift):
     result = ""
     for letter in text:
@@ -21,7 +21,7 @@ def decipher(text, shift):
             result += chr(ord("z") - shift + 1)
         else:
             result += chr(ord(letter) - shift)
-    print(result)
+    return result
 
-cipher("Imperator", 1)
-decipher("Jnqfsbups", 1)
+print(cipher("Imperator", 1))
+print(decipher("Jnqfsbups", 1))
