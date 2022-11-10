@@ -14,11 +14,13 @@ def is_diabolic(n):
         return True
     else:
         return False
+
+    
 result = 0
+
 for i in range(1,100001):
-    if is_prime(i) is True and is_diabolic(str(i)) is True:
+    if is_diabolic(i) and is_prime(i):
         result += 1
         print(i)
+
 print(f"ilosc {result}")
-
-
