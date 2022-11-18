@@ -18,7 +18,7 @@ def decipher(text, shift):
             result += letter
         elif ord(letter) - shift < ord('A') and ord(letter) < 97:
             result += chr(ord(letter) - shift + 26)
-        elif ord(letter) - shift < ord('a') and ord(letter) > 97:
+        elif ord(letter) - shift < ord('a') and ord(letter) >= 97:
             result += chr(ord(letter) - shift + 26)
         else:
             result += chr(ord(letter) - shift)
