@@ -4,10 +4,9 @@ def cipher(text, shift):
     for letter in text:
         if letter == " ":
             result += letter
-        elif letter.isupper():
-            if ord(letter) + shift > ord('Z'):
+        elif letter.isupper() is True and ord(letter) + shift > ord('Z'):
                     result += chr(ord(letter) + shift - 26)
-            elif ord (letter) + shift > ord('z'):
+        elif letter.isupper() is False and ord (letter) + shift > ord('z'):
                 result += chr(ord(letter) + shift - 26)
         else :
             result += chr(ord(letter) + shift)
